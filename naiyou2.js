@@ -6,7 +6,7 @@ hostname = *keyboard*
 [rewrite_local]
 
 
-^http[s]?:\/\/api\.keyboard\.buzhedie\.com\/input\/member_info\/.*$ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/naiyou1.js
+^http[s]?:\/\/api\.keyboard\.buzhedie\.com\/input\/member_info\/.*$ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/naiyou2.js
 
 
 
