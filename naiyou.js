@@ -15,5 +15,5 @@ var body = $response.body;
 body = JSON.parse(body);
 body.data. vip=true
 body.data. nickname=恶魔
-body.data.payTotal=99
+body.data.payTotal=1.88
 $done({body: JSON.stringify(body)});
