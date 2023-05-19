@@ -21,7 +21,7 @@ hostname = *keyboard*
 [rewrite_local]
 
 
-^http[s]?:\/\/api\.keyboard\.buzhedie\.com\/input\/member_info\/.*$ url script-response-body https://raw.githubusercontent.com/WeiRen0/Scripts/main/buzd.js
+^http[s]?:\/\/api\.keyboard\.buzhedie\.com\/input\/member_info\/.*$ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/1.js
 
 
 
