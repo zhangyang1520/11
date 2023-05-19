@@ -24,7 +24,7 @@ obj={
     "is_vip": true,
     "vip_time": "9999-09-09到期",
     "nick_name": "by~恶魔魔",
-    "avatar_url": "https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg"
+    "avatar_url": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epictY2vEjTQ6WfVaWVKVp7F3RaZILw5X7tibrlsQgsIk88AQ7us4jcBmCfEP5M6fSpRJONaz192Hgw/132"
   }
 }
 
