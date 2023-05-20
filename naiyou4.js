@@ -6,7 +6,7 @@ hostname = *naiyou*
 [rewrite_local]
 
 ^http[s]?:\/\/nz-api\.duitang\.com\/account\/me\/?statics\=1 .*$ url script-response-body 
-https://raw.githubusercontent.com/zhangyang1
+https://raw.githubusercontent.com/zhangyang1520/11/main/naiyou4.js
 
 
 
