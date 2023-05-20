@@ -33,7 +33,7 @@ obj={
     "status" : 0,
     "bindPhone" : false
   }
-}
+};
 
 
 $done({body: JSON.stringify(obj)});
