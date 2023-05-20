@@ -14,5 +14,5 @@ hostname = *naiyou*
 var body = $response.body;
 body = JSON.parse(body);
 body.data.vip=true;
-body.data.statics.payTotal="99";
+body.data.statics.payTotal="28";
 $done({body: JSON.stringify(body)});
