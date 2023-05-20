@@ -12,8 +12,9 @@ https://raw.githubusercontent.com/zhangyang1520/11/main/naiyou5.js
 
 ***************************************/
 
+
 var body = $response.body;
-let obj = JSON.parse($response.body);
+let obj = JSON.parse(body);
 obj={
   "status" : 1,
   "message" : "success",
@@ -38,6 +39,5 @@ obj={
     "bindPhone" : false
   }
 };
-
 
 $done({body: JSON.stringify(obj)});
