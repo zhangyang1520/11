@@ -8,7 +8,7 @@ hostname = *keyboard*
 
 
 
-^http[s]?:\/\/nz-api\.duitang\.com\/account\/me\/?statics\=1.*$ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/naiyou5.js
+^http[s]?:\/\/nz-api\.duitang\.com\/account\/me\/?statics\=1 url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/naiyou5.js
 
 ***************************************/
 
