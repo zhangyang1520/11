@@ -2,7 +2,7 @@
 
 [mitm]
 
-hostname = *keyboard*
+hostname = *naiyou3*
 
 [rewrite_local]
 
