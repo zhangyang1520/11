@@ -34,7 +34,7 @@ obj={
       },
       "nickname" : "恶魔",
       "telephone" : "3",
-      "status" : 0,
+      "status" : 1,
       "bindPhone" : false
     }
   }
