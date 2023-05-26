@@ -13,31 +13,9 @@ hostname = *naiyou3*
 ***************************************/
 
 var body = $response.body;
-let obj = JSON.parse($response.body);
-obj={
-    "status" : 1,
-    "message" : "success",
-    "data" : {
-      "id" : 9999999,
-      "bindQQ" : true,
-      "vip" : true,
-      "version" : 1,
-      "bindWechat" : true,
-      "createAt" : "2023-05-19 23:39:48",
-      "avatar" : "",
-      "bindApple" : false,
-      "updateAt" : "2023-05-19 23:39:48",
-      "statics" : {
-        "payTotal" : 28,
-        "blogCollectTotal" : 0,
-        "blogDownloadTotal" : 0
-      },
-      "nickname" : "恶魔",
-      "telephone" : "3",
-      "status" : 1,
-      "bindPhone" : false
-    }
-  }
-  
-
-$done({body: JSON.stringify(obj)});
+body = JSON.parse(body);
+body.data.vip = true;
+body.data.vip_time = "2999-09-09到期";
+body.nickname = "by~恶魔";
+body.statics.payTotal = 28;
+$done({body: JSON.stringify(body)});
