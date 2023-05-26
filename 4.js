@@ -15,7 +15,6 @@ hostname = *naiyou3*
 var body = $response.body;
 body = JSON.parse(body);
 body.data.vip = true;
-body.data.vip_time = "2999-09-09到期";
 body.nickname = "by~恶魔";
 body.statics.payTotal = 28;
 $done({body: JSON.stringify(body)});
