@@ -15,10 +15,11 @@ var obj = JSON.parse(body);
 const vip = 'getuserinfoandbooklist?';
 const vip1 = 'checkpro?';
 const vip2 = 'getvipproduct';
-if (url.indexOf(vip) != -1)
-{    obj.user.viptype="4";
- if (url.indexOf(vip1) != -1)
-{    obj.viptype="4";
-if (url.indexOf(vip1) != -1)
-{    obj.viptype="4";
- body = JSON.stringify(obj);}$done({body});
+if (url.indexOf(vip) != -1) {
+  obj.user.viptype = "4";
+}
+if (url.indexOf(vip1) != -1) {
+  obj.viptype = "4";
+}
+body = JSON.stringify(obj);
+$done({body: body});
