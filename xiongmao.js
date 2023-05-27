@@ -22,7 +22,7 @@ if (url.indexOf(vip) != -1)
 
 {
 
-  obj. isVip="'1";
+obj. isVip="'1";
 
 obj. UserVipLevel=3;
 
@@ -30,4 +30,6 @@ obj. Vip10=1;
 
 obj. Vip10="2099-06-30";
 
-body = JSON.stringify(obj);}$done({body});
+body = JSON.stringify(obj);
+}
+$done({body});
