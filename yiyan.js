@@ -5,7 +5,7 @@
 hostname = *app.yiyan.art*
 
 [rewrite_local]
-^ http[s]?:\/\/app\.yiyan.art\/yiyan\/ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/yiyan.js
+^http[s]?:\/\/app\.yiyan.art\/yiyan\/ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/yiyan.js
 
 ***************************************/
 
