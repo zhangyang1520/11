@@ -16,7 +16,7 @@ var url = $request.url;
 
 var obj = JSON.parse(body);
 
-const vip = '/91user/';
+const vip = '/v1/';
 
 if (url.indexOf(vip) != -1)
 
