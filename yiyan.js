@@ -14,5 +14,5 @@ var url = $request.url;
 var obj = JSON.parse(body);
 const vip = '/yiyan/';
 if (url.indexOf(vip) != -1)
-{    obj.user. "viptype" : "3";
+{    obj.user.viptype="3";
  body = JSON.stringify(obj);}$done({body});
