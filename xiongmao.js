@@ -6,7 +6,7 @@ hostname = *anduril.xmkanshu.com*
 
 [rewrite_local]
 
-^ http[s]?:\/\/anduril\.xmkanshu.com\/v1\/91user\/ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/xiongmao.js
+^http[s]?:\/\/anduril\.xmkanshu.com\/v1\/91user\/ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/xiongmao.js
 
 ***************************************/
 
