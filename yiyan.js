@@ -21,5 +21,8 @@ if (url.indexOf(vip) != -1) {
 if (url.indexOf(vip1) != -1) {
   obj.viptype = "4";
 }
+if (url.indexOf(vip2) != -1) {
+  obj.viptype = "4";
+}
 body = JSON.stringify(obj);
 $done({body: body});
