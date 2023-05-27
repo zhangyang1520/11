@@ -16,7 +16,7 @@ var url = $request.url;
 
 var obj = JSON.parse(body);
 
-const vip = '/v1/';
+const vip = 'appstore';
 
 if (url.indexOf(vip) != -1)
 
