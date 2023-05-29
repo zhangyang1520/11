@@ -3,7 +3,7 @@
 hostname=*sleep.navolove.com*
 
 [rewrite_local]
-^http[s]?:\/\/sleep.navolove.com\/api\/refresh\_user\_info
+^http[s]?:\/\/sleep.navolove.com\/api\/refresh_user_info
 
 *********************************************************/
 
