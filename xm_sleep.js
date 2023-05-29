@@ -10,7 +10,7 @@ var body = $response.body;
 var url = $response.url;
 var obj = JSON.parse(body);
 const api_url = /refresh_user_info?/;
-if(url.match(api_url) && obj.data) {
+if(url.indexOf(api_url) != -1) {
   obj.data.nickname = "by-恶魔";
   obj.data.is_svip = true;
   obj.data.is_vip = true;
