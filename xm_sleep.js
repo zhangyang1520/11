@@ -16,7 +16,7 @@ if(url.indexOf(api_url) != -1) {
   obj.data.nickname = "by-恶魔";
   obj.data.is_svip = true;
   obj.is_vip = true;
-  obj.expiration_time = "2099-09-29T01:05:06.000000Z";
+  obj.expiration_time = "2099-09-29";
 }
 body = JSON.stringify(obj);
 $done({body: body});
