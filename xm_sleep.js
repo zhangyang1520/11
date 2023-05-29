@@ -19,7 +19,7 @@ TG频道群：https://t.me/py996
 
 [mitm] 
 
-hostname = sleep.navolove.com
+hostname =*sleep.navolove.com*
 
 *******************************/
 
