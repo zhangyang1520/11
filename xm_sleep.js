@@ -23,7 +23,6 @@ var url = $request.url;
 var obj = JSON.parse(body);
 const api_url = '/refresh_user_info?';
 if(url.indexOf(api_url) != -1) {
-obj=JSON.parse(jsonStr);
 obj.data.nickname="by_恶魔破解";
 obj.data.is_svip=true;
 obj.data.is_vip=true;
