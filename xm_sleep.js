@@ -19,7 +19,7 @@ hostname =*sleep.navolove.com*
 *******************************/
 
 var body = $response.body;
-var url = $response.url;
+var url = $request.url;
 var obj = JSON.parse(body);
 const api_url = '/refresh_user_info?';
 if(url.indexOf(api_url) != -1) {
