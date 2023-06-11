@@ -8,7 +8,8 @@ hostname = *ate.wujiebantu.com*
 ^http[s]?:\/\/gate\.wujiebantu\.com\/one\-graph\-auth\/graphql\/ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/wujie.js
 
 ***************************************/
-
+let obj=$response.body;
+const list1=["copyrightUserInfo","userMemberCardList","buyMemberCardList"];
 for (const i of list1){
     if(i=== list1[0]){
     obj.copyrightUserInfo.availableBalance =9999;
