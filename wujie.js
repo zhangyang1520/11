@@ -1,3 +1,11 @@
+[mitm]
+
+hostname = *ate.wujiebantu.com*
+
+[rewrite_local]
+^http[s]?:\/\/gate\.wujiebantu\.com\/one\-graph\-auth\/graphql\/ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/wujie.js
+
+***************************************/
 let obj=$response.body;
 const list1=["copyrightUserInfo","userMemberCardList","buyMemberCardList"];
 for (let i of list1) {
