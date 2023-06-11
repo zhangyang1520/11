@@ -28,8 +28,7 @@ obj={
           "cardType" : "ORIGIN_CARD",
           "name" : "AI魔法体验卡",
           "hold" : true
-        }
-      ],[
+        },
         {
           "__typename" : "MemberCard",
           "cardType" : "PLATINUM_CARD",
