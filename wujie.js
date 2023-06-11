@@ -10,7 +10,7 @@ hostname = *ate.wujiebantu.com*
 ***************************************/
 let obj=$response.body;
 const list1=["copyrightUserInfo","userMemberCardList","buyMemberCardList"];
-for (const i of list1){
+for (let i of obj){
     if(i=== list1[0]){
         obj.copyrightUserInfo.availableBalance =9999;
         obj. copyrightUserInfo.nickname="by_恶魔破解";
