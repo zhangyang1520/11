@@ -10,7 +10,7 @@ let obj=$response.body;
 const list1=["copyrightUserInfo","userMemberCardList","buyMemberCardList"];
 for (let i of list1) {
     if(i in obj){
-        if(i=== list1[0]){
+        if(i===list1[0]){
             obj.copyrightUserInfo.availableBalance =9999;
             obj. copyrightUserInfo.nickname="by_恶魔破解";
             obj. copyrightUserInfo.userRoleInfo.aiArtist=true;
