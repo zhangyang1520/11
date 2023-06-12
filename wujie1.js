@@ -10,11 +10,11 @@ hostname = *ate.wujiebantu.com*
 let obj=$response.body;
 const list1=["copyrightUserInfo","userMemberCardList","buyMemberCardList"];
 if (list1[0] in obj){
-    obj.copyrightUserInfo.availableBalance=9999;
-    obj.copyrightUserInfo.nickname="by_恶魔破解";
-    obj.copyrightUserInfo.userRoleInfo.aiArtist=true;
-    obj.copyrightUserInfo.userRoleInfo.artist=true;
-    obj.copyrightUserInfo.memberDetail.endTime=4102041723;
-    obj.copyrightUserInfo.memberDetail.hold=true;
+    obj.data.copyrightUserInfo.integralWalletBalance.availableBalance=9999;
+    obj.data.copyrightUserInfo.nickname="by_恶魔破解";
+    obj.data.copyrightUserInfo.userRoleInfo.aiArtist=true;
+    obj.data.copyrightUserInfo.userRoleInfo.artist=true;
+    obj.data.copyrightUserInfo.memberDetail.endTime=4102041723;
+    obj.data.copyrightUserInfo.memberDetail.hold=true;
 };
 $done({body: JSON.stringify(obj)});
