@@ -1,7 +1,7 @@
 /***************************************
 [mitm]
 
-hostname = *ate.wujiebantu.com*
+hostname = *gate.wujiebantu.com*
 
 [rewrite_local]
 ^http[s]?:\/\/gate\.wujiebantu\.com\/one\-graph\-auth\/graphql\/ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/wujie1.js
