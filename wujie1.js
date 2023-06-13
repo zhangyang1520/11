@@ -9,7 +9,7 @@ hostname = *gate.wujiebantu.com*
 ***************************************/
 var body=$response.body;
 var obj = JSON.parse(body);
-if (nickname in obj){
+if ("nickname" in obj){
     obj.data.copyrightUserInfo.nickname="by_恶魔破解"
 }
 $done({body: JSON.stringify(obj)});
