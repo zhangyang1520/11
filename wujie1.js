@@ -8,8 +8,9 @@ hostname = *ate.wujiebantu.com*
 
 ***************************************/
 let obj=$response.body;
+body = JSON.parse(body);
 const list1=["copyrightUserInfo","userMemberCardList","buyMemberCardList"];
-if (list1[0] in obj){
+if (list1[0] in body){
     obj.data.copyrightUserInfo.integralWalletBalance.availableBalance=9999;
     obj.data.copyrightUserInfo.nickname="by_恶魔破解";
     obj.data.copyrightUserInfo.userRoleInfo.aiArtist=true;
@@ -17,4 +18,4 @@ if (list1[0] in obj){
     obj.data.copyrightUserInfo.memberDetail.endTime=4102041723;
     obj.data.copyrightUserInfo.memberDetail.hold=true;
 };
-$done({body: JSON.stringify(obj)});
+$done({body: JSON.stringify(body)});
