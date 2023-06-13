@@ -9,8 +9,7 @@ hostname = *gate.wujiebantu.com*
 ***************************************/
 var body=$response.body;
 var obj = JSON.parse(body);
-const list1=["copyrightUserInfo","userMemberCardList","buyMemberCardList"];
-if (list1[0] in obj){
+if (copyrightUserInfo in obj){
     obj.data.copyrightUserInfo.nickname="by_恶魔破解"
 }
 $done({body: JSON.stringify(obj)});
