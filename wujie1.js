@@ -8,10 +8,11 @@ hostname = *gate.wujiebantu.com*
 
 ***************************************/
 var timestamp = new Date().valueOf() / 1000;
+$done({header: {"time": Math.floor(timestamp)}});
 var resbody=$response.body;
 var body = $request.body;
 var obj = JSON.parse(body);
 if ("nickname" in obj){
     obj.data.copyrightUserInfo.nickname="by_恶魔破解"
-}$done({header: {"time": Math.floor(timestamp)}});
+}
 $done({body: JSON.stringify(obj)});
