@@ -11,7 +11,6 @@ var body=$response.body;
 var obj = JSON.parse(body);
 const list1=["copyrightUserInfo","userMemberCardList","buyMemberCardList"];
 if (list1[0] in obj){
-    obj.data.copyrightUserInfo.integralWalletBalance.availableBalance=9999;
     obj.data.copyrightUserInfo.nickname="by_恶魔破解";
     obj.data.copyrightUserInfo.userRoleInfo.aiArtist=true;
     obj.data.copyrightUserInfo.userRoleInfo.artist=true;
