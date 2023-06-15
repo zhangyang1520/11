@@ -9,7 +9,7 @@ hostname = *gate.wujiebantu.com*
 ***************************************/
 
 const c="copyrightUserInfo"
-const p="userMemberCardList"
+const p="accountModule"
 var body = $response.body;
 var obj = JSON.parse(body);
 
