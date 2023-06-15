@@ -4,15 +4,13 @@
 hostname = *gate.wujiebantu.com*
 
 [rewrite_local]
-^http[s]?:\/\/gate\.wujiebantu\.com\/one\-graph\-auth\/graphql\/ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/wujie1.js
+^http[s]?:\/\/gate\.wujiebantu\.com\/one\-graph\-auth\/graphql\/.*$ url script-response-body https://raw.githubusercontent.com/zhangyang1520/11/main/wujie1.js
 
 ***************************************/
-var timestamp = new Date().valueOf() / 1000;
-$done({header: {"time": Math.floor(timestamp)}});
-var resbody=$response.body;
+
 var body = $request.body;
 var obj = JSON.parse(body);
-if ("nickname" in obj){
-    obj.data.copyrightUserInfo.nickname="by_恶魔破解"
+if ("g3UH4AbS" in obj){
+    obj.data.copyrightUserInfo.nickname="EMO";
 }
 $done({body: JSON.stringify(obj)});
