@@ -40,5 +40,5 @@ if(obj.data.hasOwnProperty(c)){
                     ],
                     "__typename" : "AccountModuleQuery"
                 }
-            }};
+            };}
 $done({body: JSON.stringify(obj)});
