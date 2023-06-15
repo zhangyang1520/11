@@ -19,6 +19,25 @@ if(obj.data.hasOwnProperty(c)){
     obj.data[c].userRoleInfo.artist=true;
     obj.data[c].memberDetail.endTime=4102041723;
     obj.data[c].memberDetail.hold=true;
-}
+}else if(obj.data.accountModule(c)){
+            obj={
+                "accountModule" : {
+                    "userMemberCardList" : [
+                        {
+                            "__typename" : "MemberCard",
+                            "cardType" : "ORIGIN_CARD",
+                            "name" : "AI魔法体验卡",
+                            "hold" : true
+                        },
+                        {
+                            "__typename" : "MemberCard",
+                            "cardType" : "PLATINUM_CARD",
+                            "name" : "铂金权益卡",
+                            "hold" : true
+                        }
+                    ],
+                    "__typename" : "AccountModuleQuery"
+                }
+            };
 
 $done({body: JSON.stringify(obj)});
