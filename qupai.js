@@ -10,5 +10,5 @@ hostname = *s.mcwifi.cn*
 var body = $response.body;
 body = JSON.parse(body);
 body.data.isVip = "1";
-body.data.expiresDateMs = "9999999";
+body.data.expiresDateMs = "32495443200000";
 $done({body: JSON.stringify(body)});
