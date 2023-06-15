@@ -9,8 +9,10 @@ hostname = *gate.wujiebantu.com*
 ***************************************/
 
 const c="copyrightUserInfo"
+const p="userMemberCardList"
 var body = $response.body;
 var obj = JSON.parse(body);
+
 
 if(obj.data.hasOwnProperty(c)){
     obj.data[c].availableBalance=9999;
@@ -19,7 +21,7 @@ if(obj.data.hasOwnProperty(c)){
     obj.data[c].userRoleInfo.artist=true;
     obj.data[c].memberDetail.endTime=4102041723;
     obj.data[c].memberDetail.hold=true;
-}else if(obj.data.accountModule(c)){
+}else if(obj.data.accountModule(p)){
             obj={
                 "accountModule" : {
                     "userMemberCardList" : [
