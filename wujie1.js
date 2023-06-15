@@ -8,9 +8,12 @@ hostname = *gate.wujiebantu.com*
 
 ***************************************/
 
+const c="copyrightUserInfo"
 var body = $response.body;
 var obj = JSON.parse(body);
-if ("g3UH4AbS" in obj){
-    obj.data.copyrightUserInfo.nickname="EMO";
+
+if(obj.data.hasOwnProperty(c)){
+    obj.data[c].nickname="EMO";
 }
+
 $done({body: JSON.stringify(obj)});
