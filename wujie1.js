@@ -15,7 +15,7 @@ var obj = JSON.parse(body);
 
 
 if(obj.data.hasOwnProperty(c)){
-    obj.data[c].availableBalance=9999;
+    obj.data[c].integralWalletBalance.availableBalance=9999;
     obj.data[c].nickname="by_恶魔破解";
     obj.data[c].userRoleInfo.aiArtist=true;
     obj.data[c].userRoleInfo.artist=true;
