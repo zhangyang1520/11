@@ -20,9 +20,9 @@ if(obj.data.hasOwnProperty(c)){
     obj.data[c].userRoleInfo.aiArtist=true;
     obj.data[c].userRoleInfo.artist=true;
     obj.data[c].memberDetail.endTime=4102041723;
-    obj.data[c].memberDetail.hold=true;
-}else if(obj.data.accountModule(p)){
-            obj={
+    obj.data[c].memberDetail.hold=true;}else if(obj.data.hasOwnProperty(p)){
+            obj= {
+  "data" : {
                 "accountModule" : {
                     "userMemberCardList" : [
                         {
@@ -40,6 +40,5 @@ if(obj.data.hasOwnProperty(c)){
                     ],
                     "__typename" : "AccountModuleQuery"
                 }
-            };
-
+            }};
 $done({body: JSON.stringify(obj)});
