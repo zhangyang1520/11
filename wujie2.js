@@ -13,7 +13,7 @@ const p="accountModule"
 var body = $response.body;
 var obj = JSON.parse(body);
 
-if(obj.data.hasOwnProperty(p)){
+if(obj.data.hasOwnProperty(c)){
     obj.data[c].integralWalletBalance.availableBalance=9999;
     obj.data[c].nickname="by_恶魔破解";
     obj.data[c].userRoleInfo.aiArtist=true;
@@ -21,7 +21,7 @@ if(obj.data.hasOwnProperty(p)){
     obj.data[c].memberDetail.endTime=4102041723;
     obj.data[c].memberDetail.hold=true;
     $done({body: JSON.stringify(obj)});}
-if(obj.data.hasOwnProperty(c)){
+if(obj.data.hasOwnProperty(p)){
     var objNew={
         "data": {
             "accountModule": {
