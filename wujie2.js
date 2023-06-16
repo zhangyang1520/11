@@ -14,19 +14,19 @@ const L="buyMemberCardList"
 var body = $response.body;
 let obj = JSON.parse(body);
 
-if(obj.data.hasOwnProperty(c)){
+/*if(obj.data.hasOwnProperty(c)){
     obj.data[c].integralWalletBalance.availableBalance=9999;
     obj.data[c].nickname="by_恶魔破解";
     obj.data[c].userRoleInfo.aiArtist=true;
     obj.data[c].userRoleInfo.artist=true;
     obj.data[c].memberDetail.endTime=4102041723;
-    obj.data[c].memberDetail.hold=true;}
+    obj.data[c].memberDetail.hold=true;}*/
 if(obj.data.hasOwnProperty(p)){
    obj.data[p].userMemberCardList[0].cardType="PLATINUM_CARD";
    obj.data[p].userMemberCardList[0].name="珀金权益卡";}
 
-/*if(obj.data[p].hasOwnProperty(L)){
+if(obj.data[p].hasOwnProperty(L)){
    obj.data[p][L][0].holdCardInfo[0].num=99;
-}*/
+}
 
  $done({body: JSON.stringify(obj)});
