@@ -8,8 +8,8 @@ hostname = *gate.wujiebantu.com*
 
 ***************************************/
 
-const c="copyrightUserInfo"
-const p="accountModule"
+const c="copyrightUserInfo";
+const p="accountModule";
 var body = $response.body;
 let obj = JSON.parse(body);
 
@@ -22,5 +22,8 @@ if(obj.data.hasOwnProperty(c)){
     obj.data[c].memberDetail.hold=true;}
 if(obj.data.hasOwnProperty(p)){
    obj.data[p].userMemberCardList[0].cardType="PLATINUM_CARD";
-   obj.data[p].userMemberCardList[0].name="珀金权益卡";}
+   obj.data[p].userMemberCardList[0].name="珀金权益卡";
+   obj.data[p].buyMemberCardList[4].hold=true;
+}
+   
  $done({body: JSON.stringify(obj)});
