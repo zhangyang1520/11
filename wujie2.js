@@ -13,7 +13,7 @@ const p="accountModule"
 var body = $response.body;
 var obj = JSON.parse(body);
 
-if(obj.data.hasOwnProperty(c)){
+if(obj.data.hasOwnProperty(p)){
     obj.data[c].integralWalletBalance.availableBalance=9999;
     obj.data[c].nickname="by_恶魔破解";
     obj.data[c].userRoleInfo.aiArtist=true;
