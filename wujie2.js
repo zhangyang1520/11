@@ -25,9 +25,8 @@ if(obj.data.hasOwnProperty(p)){
    obj.data[p].userMemberCardList[0].cardType="PLATINUM_CARD";
    obj.data[p].userMemberCardList[0].name="珀金权益卡";}
 
-if(obj.data[p].hasOwnProperty(L)){
+/*if(obj.data[p].hasOwnProperty(L)){
    obj.data[p][L][0].holdCardInfo[0].num=99;
-}
+}*/
 
-   
  $done({body: JSON.stringify(obj)});
